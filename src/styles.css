@@ -37,8 +37,8 @@ body {
   /* Main content styles */
   .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
-    grid-gap: 20px; /* Adjust the gap between products as needed */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     margin-top: 20px;
   }
   
@@ -52,7 +52,7 @@ body {
   .product-card img {
     max-width: 100%;
     height: auto;
-    max-height: 100px; /* Adjust image height as needed */
+    max-height: 100px; 
   }
   
   .product-card h3 {

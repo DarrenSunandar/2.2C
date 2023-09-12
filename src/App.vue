@@ -15,7 +15,7 @@
 
 <script>
 import ProductList from "@/components/ProductList.vue";
-import Cart from "@/components/ShoppingCart.vue"; // Assuming that Cart is the correct component name
+import Cart from "@/components/ShoppingCart.vue";
 
 export default {
   components: {
