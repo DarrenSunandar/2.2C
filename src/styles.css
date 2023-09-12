@@ -1,0 +1,93 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: whitesmoke;
+    color: green;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  
+  header button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Main content styles */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    grid-gap: 20px; /* Adjust the gap between products as needed */
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* Adjust image height as needed */
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .product-card button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to product cards */
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list {
+      grid-template-columns: repeat(1, 1fr); /* One column on small screens */
+    }
+  }
+  
